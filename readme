@@ -20,3 +20,11 @@ watch package.json and run it according to your preference
 or 
 
 > npm run dev
+
+
+
+
+to build a container:
+> docker build --build-arg DATABASE_URL="postgresql://username:password@localhost:5432/dbname?schema=public" -t prisma-app:1.0 .
+to run container:
+> docker run -p 3000:3000 --name prisma-app-container prisma-app:1.0
