@@ -31,3 +31,11 @@ to build a container:
 2) the run the container
 to run container:
 > docker run -p 3000:3000 --name prisma-app-container prisma-app:1.0
+                                 |                  |
+                                 --------------------
+                                         |
+                      -------------------------------------------------------------------
+                     |   you can give here any name of your container                   |
+                     |   if you dont want then remove "  --name prisma-app-container  " |        just dockers thing  :D
+                     |   docker will automatically gives random weird names             |
+                     --------------------------------------------------------------------
